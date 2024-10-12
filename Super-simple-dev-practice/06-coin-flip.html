@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Coin Flip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <p>Try to Guess Head or Tails</p>
+
+        <button onclick="
+            let computerGuess='';
+
+            const randomNum=Math.random();
+            if (randomNum<0.5){
+                computerGuess='heads'
+            }    else if (randomNum>0.5){
+                computerGuess='tails';
+            }        
+            
+            console.log(computerGuess);
+
+            let result='';
+            if(computerGuess=='heads'){
+                result='You Win';
+            }else {
+                result='Nice Try!';
+            }
+            
+           alert(`You chosse Head , The flip is ${computerGuess} and ${result}`)
+            ">Head</button>
+
+            <button onclick="
+            
+            let computerGuess1='';
+
+            const randomNum1=Math.random();
+            if (randomNum1<0.5){
+                computerGuess1='heads'
+            }    else if (randomNum1>0.5){
+                computerGuess1='tails';
+            }        
+            
+            console.log(computerGuess1);
+
+            let result1='';
+            if(computerGuess1=='tails'){
+                result1='You Win';
+            }else {
+                result1='Nice Try!';
+            }
+            
+           alert(`You chosse Tail, The flip is ${computerGuess1} and ${result1}`)
+            "
+    
+
+            ">Tail</button>
+    </body>
+</html>

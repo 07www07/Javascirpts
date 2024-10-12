@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Objects,Built in Object</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        
+       /*  const name={
+            type:'shirt',
+            color:'black',
+            rating:{
+                star:5,
+                count:'Good'
+            },
+            fun: function(){
+                console.log('This is inside a funciton');
+            }
+            };
+            console.log (name.rating.star);
+            console.log (name.fun);
+        
+
+            // JSON
+            console.log(JSON.stringify(name));  //Javascript code to JSON string , JSON is convert code to string
+
+            //JSON to JavaScript
+            const jsonString=JSON.stringify(name);
+           console.log (JSON.parse(jsonString));
+
+           //local storage : save values more paermnently
+           console.log (localStorage.getItem('message'));
+           localStorage.setItem('message','hello'); */
+
+
+           //Auto-boxing
+
+           console.log('hell',length);
+          /*  console.log('hell',toUpperCase()); */
+
+           //Reference
+           const obj1={
+            message:'hello'
+           };
+
+           const obj2= obj1;
+
+           obj1.message='Good Job';
+           console.log(obj1);
+           console.log(obj2);
+
+           //destructing
+           const obj4={
+            message:'Good After',
+            price:799
+           };
+           //const message=obj4.message;
+           const{message,price}=obj4;
+           console.log(message);
+           console.log(price);
+
+           //shorthand property
+
+           const objs={
+            //message:message
+            message,
+         
+            method:function function1() {
+                console.log('method');
+                
+            }
+           };
+           console.log(objs);
+           objs.method();
+
+    </script>
+    </body>
+</html> 

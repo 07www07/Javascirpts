@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DOM Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <style>
+        .subBtn{
+            border: none;
+            background-color: black;
+            color: aliceblue;
+            padding: 10px ;
+            font-weight: bold;
+            border-radius: 20px;
+
+            cursor: pointer;
+            margin-bottom: 20;
+
+        }
+     .is-subed{
+        background-color: rgb(214, 213, 213);
+        color: black;
+     }
+     body{
+        font-family: Arial, Helvetica, sans-serif;
+
+     }
+
+
+
+
+    </style>
+    <body>
+
+        <p>Youtube Subscribe Button</p>
+
+        <button onclick="
+         sub();
+        " class="js-subBtn subBtn">Sucscribe</button>
+       <script>
+
+
+       function sub(){
+        const btnElent=document.querySelector(' .js-subBtn');
+
+        if(btnElent.innerHTML==='Sucscribe'){
+            btnElent.innerHTML='Sucscribed';
+            btnElent.classList.add('is-subed');
+        }else{
+            btnElent.innerHTML='Sucscribe';
+            btnElent.classList.remove('is-subed');// . is not required
+        }
+       }
+
+
+       </script>
+    </body>
+</html>

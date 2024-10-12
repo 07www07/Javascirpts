@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cart Quantity</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    
+
+       <!--Show Qty-->
+    
+
+        <button onclick="
+            console.log(`Cart Qty : ${cartQty}`);
+            
+            ">Show Qty</button>
+
+         <!--Add to cart-->
+        <button onclick="
+            let max=10;
+        cartQty=cartQty+1;
+       
+        if(cartQty>max){
+            console.log(`Cart Qty is full to limited qty`);
+            alert(`Cart Qty is full to limited qty`);
+        }else{
+            console.log(`Cart Qty : ${cartQty}`);
+        }
+        
+        ">Add to cart</button>
+
+
+         <!--+2-->
+        <button onclick="
+            let max1=10;
+        cartQty=cartQty+2;
+        if(cartQty>max1){
+            console.log(`Cart Qty is full to limited qty`);
+            alert(`Cart Qty is full to limited qty`);
+        }else{
+            console.log(`Cart Qty : ${cartQty}`);
+        }
+
+        ">+2</button>
+
+
+         <!-- +3 -->
+        <button onclick="
+            let max3=10;
+        cartQty=cartQty+3;
+        if(cartQty>max3){
+            console.log(`Cart Qty is full to limited qty`);
+            alert(`Cart Qty is full to limited qty`);
+        }else{
+            console.log(`Cart Qty : ${cartQty}`);
+        }
+
+        ">+3</button>
+
+
+         <!--Reset-->
+        <button onclick="
+        cartQty=0;
+        if(cartQty==0){
+            console.log(`Cart Qty is reset`);
+        }else{
+            console.log(`Cart Qty : ${cartQty}`);
+        }
+        
+        ">Reset Qty</button>
+
+        <script>
+            let cartQty=0;
+        </script>
+    </body>
+</html>
